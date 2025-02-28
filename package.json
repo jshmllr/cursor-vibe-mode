@@ -16,9 +16,7 @@
     "Other"
   ],
   "activationEvents": [
-    "onStartupFinished",
-    "onCommand:cursor-vibe-mode.toggleVibeMode",
-    "onCommand:cursor-vibe-mode.toggleAISidebar"
+    "onStartupFinished"
   ],
   "main": "./out/extension.js",
   "contributes": {
