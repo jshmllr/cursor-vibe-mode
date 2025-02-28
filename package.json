@@ -1,0 +1,98 @@
+{
+  "name": "cursor-vibe-mode",
+  "displayName": "Cursor Vibe Mode",
+  "description": "Enhanced Zen Mode for Cursor.ai that keeps AI features accessible while maintaining focus",
+  "version": "0.0.3",
+  "publisher": "jshmllr-sftwrdsgnr",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jshmllr/cursor-vibe-mode.git"
+  },
+  "engines": {
+    "vscode": "^1.93.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onStartupFinished",
+    "*"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "cursor-vibe-mode.toggleVibeMode",
+        "title": "Toggle Vibe Mode"
+      },
+      {
+        "command": "cursor-vibe-mode.toggleAISidebar",
+        "title": "Toggle AI Sidebar"
+      }
+    ],
+    "configuration": {
+      "title": "Cursor Vibe Mode",
+      "properties": {
+        "cursor-vibe-mode.keepAIVisible": {
+          "type": "boolean",
+          "default": true,
+          "description": "Keep AI Chat and Composer panels visible in Vibe Mode"
+        },
+        "cursor-vibe-mode.hideStatusBar": {
+          "type": "boolean",
+          "default": false,
+          "description": "Hide status bar in Vibe Mode"
+        },
+        "cursor-vibe-mode.useFullScreen": {
+          "type": "boolean",
+          "default": true,
+          "description": "Use full screen mode when entering Vibe Mode"
+        },
+        "cursor-vibe-mode.restoreBreadcrumbs": {
+          "type": "boolean",
+          "default": true,
+          "description": "Restore breadcrumbs when exiting Vibe Mode if they were enabled in user settings"
+        },
+        "cursor-vibe-mode.useCenteredLayout": {
+          "type": "boolean",
+          "default": false,
+          "description": "Use centered editor layout in Vibe Mode"
+        }
+      }
+    },
+    "keybindings": [
+      {
+        "command": "cursor-vibe-mode.toggleVibeMode",
+        "key": "ctrl+k v",
+        "mac": "cmd+k v",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "cursor-vibe-mode.toggleAISidebar",
+        "key": "ctrl+cmd+b",
+        "mac": "ctrl+cmd+b",
+        "when": "editorTextFocus"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.93.0",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "20.x",
+    "@typescript-eslint/eslint-plugin": "^8.22.0",
+    "@typescript-eslint/parser": "^8.22.0",
+    "eslint": "^9.19.0",
+    "typescript": "^5.7.3",
+    "@vscode/test-cli": "^0.0.10",
+    "@vscode/test-electron": "^2.4.1"
+  }
+}

@@ -1,0 +1,45 @@
+---
+description: This is helpful for building out the extension for the current version of Cursor AI
+globs: 
+alwaysApply: false
+---
+    
+---
+description: Guidelines and best practices for the cursor-vibe-mode extension.
+globs: ["**/*.ts", "**/*.json", "**/*.md"]
+---
+
+# Project Overview
+
+The `cursor-vibe-mode` extension enhances the Zen Mode in Cursor by keeping AI Chat and Composer panels accessible, providing a seamless coding experience.
+
+# Development Guidelines
+
+- **Code Structure:** Follow the standard VS Code extension architecture.
+- **Styling:** Ensure consistency with Cursor's UI/UX design.
+- **Dependencies:** Use minimal external libraries to maintain performance.
+
+# AI Integration
+
+- **Context Awareness:** Ensure the AI understands the custom Zen Mode behavior.
+- **Commands:** Implement commands that allow users to toggle features easily.
+- **User Feedback:** Provide clear messages for AI actions to enhance user experience.
+
+# Maintenance
+
+- **Testing:** Regularly test the extension with the latest Cursor updates.
+- **Documentation:** Keep the README and other documentation up to date.
+- **Community Engagement:** Encourage users to report issues and contribute to the project.
+
+# Version Information
+
+- **Cursor Version:** 0.46.3
+- **VSCode Version:** 1.96.2
+- **Commit:** fce3511bab261b4c986797f3e1e40e7621bbd010
+- **Date:** 2025-02-24T11:21:00.260Z
+- **Electron:** 32.2.6
+- **Chromium:** 128.0.6613.186
+- **Node.js:** 20.18.1
+- **V8:** 12.8.374.38-electron.0
+
+
