@@ -1,5 +1,17 @@
 // This extension provides a "Vibe Mode" for Cursor.ai that creates a distraction-free coding environment
 // while keeping AI features accessible. Here's how it works:
+//
+// 1. The extension tracks whether Vibe Mode is active with the isVibeModeActive flag
+// 2. When activated, it applies a series of UI changes to create a focused environment:
+//    - Hides distracting UI elements like sidebars and breadcrumbs
+//    - Optionally enables full screen mode
+//    - Optionally uses centered layout for better focus
+//    - Keeps AI features accessible
+// 3. When deactivated, it restores the previous UI state
+// 4. All operations are logged to an output channel for debugging
+// 5. Configuration changes are monitored and reapplied if Vibe Mode is active
+// 6. UI changes are applied with animation delays for a smooth transition
+// 7. Error handling ensures graceful degradation if commands fail
 
 // Import the VS Code API
 import * as vscode from 'vscode';

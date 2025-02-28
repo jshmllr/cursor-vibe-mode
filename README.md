@@ -58,7 +58,6 @@ Alternatively, you can install the extension manually:
 
 This extension contributes the following settings:
 
-* `cursor-vibe-mode.keepAIVisible`: Keep AI Chat and Composer panels visible in Vibe Mode (default: `true`)
 * `cursor-vibe-mode.aiPanelPosition`: Position of AI panels in Vibe Mode - "side" or "bottom" (default: `side`)
 * `cursor-vibe-mode.hideStatusBar`: Hide status bar in Vibe Mode (default: `false`)
 * `cursor-vibe-mode.useFullScreen`: Use full screen mode when entering Vibe Mode (default: `true`)

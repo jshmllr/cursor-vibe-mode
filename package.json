@@ -34,11 +34,6 @@
     "configuration": {
       "title": "Cursor Vibe Mode",
       "properties": {
-        "cursor-vibe-mode.keepAIVisible": {
-          "type": "boolean",
-          "default": true,
-          "description": "Keep AI Chat and Composer panels visible in Vibe Mode"
-        },
         "cursor-vibe-mode.hideStatusBar": {
           "type": "boolean",
           "default": false,
