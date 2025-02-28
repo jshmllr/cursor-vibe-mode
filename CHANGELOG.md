@@ -4,6 +4,13 @@ All notable changes to the "cursor-vibe-mode" extension will be documented in th
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## [0.0.4] - 2024-02-28
+
+### Added
+- Added SUPPORT.md file with comprehensive support information
+- Added gallery banner for better marketplace presentation
+- Improved documentation for marketplace integration
+
 ## [0.0.3] - 2024-02-26
 
 ### Added

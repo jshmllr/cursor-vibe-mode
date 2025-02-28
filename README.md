@@ -14,7 +14,8 @@ Cursor Vibe Mode is a Visual Studio Code extension designed specifically for Cur
 - **Explicit Enable/Disable**: Separate commands to explicitly enable or disable Vibe Mode
 - **Cursor-Optimized**: Designed specifically for Cursor AI's unique UI structure
 
-![Cursor Vibe Mode](https://via.placeholder.com/800x450.png?text=Cursor+Vibe+Mode)
+
+![Cursor Vibe Mode](images/placeholder-1335x694.png)
 
 ## Installation
 

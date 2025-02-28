@@ -2,13 +2,14 @@
   "name": "cursor-vibe-mode",
   "displayName": "Cursor Vibe Mode",
   "description": "Enhanced Zen Mode for Cursor.ai that keeps AI features accessible while maintaining focus",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "publisher": "jshmllr-sftwrdsgnr",
   "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/jshmllr/cursor-vibe-mode.git"
   },
+  "icon": "images/icon.png",
   "engines": {
     "vscode": "^1.93.0"
   },
@@ -93,5 +94,9 @@
     "typescript": "^5.7.3",
     "@vscode/test-cli": "^0.0.10",
     "@vscode/test-electron": "^2.4.1"
+  },
+  "galleryBanner": {
+    "color": "#000000",
+    "theme": "dark"
   }
 }
